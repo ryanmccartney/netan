@@ -1,0 +1,25 @@
+{
+  "interface": {
+    "id": "eth0",
+    "label": "eth0: 172.22.0.2 "
+  },
+  "script": {
+    "username": "cisco",
+    "password": "cisco",
+    "code": "config terminal\n\ninterface {{currentport}}\nno shut test\nswitchport mode access\nswitchport vlan 123\n\nexit\n\ndo write"
+  },
+  "pings": [
+    {
+      "name": "Google DNS",
+      "host": "8.8.8.8"
+    },
+    {
+      "name": "Gateway",
+      "host": "{{gateway}}"
+    },
+    {
+      "name": "My IP",
+      "host": "{{ipv4}}"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+# NAME: docker-compose.yml
+# AUTH: Ryan McCartney <ryan@mccartney.info>
+# DATE: 19/08/2022
+# DESC: Defines Docker services for Netan
+
+version: "3.9"
+
+services:
+    app:
+        build:
+            context: "./src"
+        restart: always
+        volumes:
+            - ./src:/home/node/netan
+        ports:
+            - 80:80
+            - 3000:3000
+        environment:
+            NETAN_PORT: 80
+            NETAN_HOST: "127.0.0.1"
+            NETAN_LOG_FOLDER: logs
+            NETAN_LOG_NAME: netan
+            NETAN_LOG_LEVEL: debug
+            NODE_ENV: development
+            PORT: 3000
