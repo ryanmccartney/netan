@@ -6,7 +6,7 @@
     "production": "node ./bin/index",
     "development": "concurrently \"nodemon ./bin/index \" \"cd client && npm run start\""
   },
-  "author": "",
+  "author": "Ryan McCartney",
   "license": "MIT",
   "dependencies": {
     "body-parser": "^1.20.0",
