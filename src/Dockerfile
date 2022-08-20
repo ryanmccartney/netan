@@ -3,6 +3,7 @@ FROM node:18
 RUN apt update
 RUN apt install lldpd -y
 RUN service lldpd restart
+RUN apt install -y libmnl-dev
 RUN wget ftp.uk.debian.org/debian/pool/main/e/ethtool/ethtool_5.9-1_arm64.deb
 RUN dpkg -i ethtool_5.9-1_arm64.deb
 
