@@ -1,7 +1,11 @@
 {
   "interface": {
     "id": "eth0",
+<<<<<<< HEAD
     "label": "eth0: 172.18.0.2 "
+=======
+    "label": "eth0: 192.168.0.127 "
+>>>>>>> d7471052716ad505404d1d0d42beacf2dbdbda9d
   },
   "script": {
     "username": "cisco",
