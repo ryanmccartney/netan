@@ -9,7 +9,7 @@ const setConfig = require("@services/set-config");
 
 /**
  * @swagger
- * /hello:
+ * /system/hello:
  *    get:
  *      description: API says hello.
  *      tags: [system]
@@ -31,7 +31,7 @@ router.get(
 
 /**
  * @swagger
- * /routes:
+ * /system/routes:
  *    get:
  *      description: Get system routing table.
  *      tags: [system]
@@ -53,7 +53,7 @@ router.get(
 
 /**
  * @swagger
- * /config:
+ * /system/config:
  *    get:
  *      description: Gets the system config with variables rendered
  *      tags: [system]
@@ -75,7 +75,7 @@ router.get(
 
 /**
  * @swagger
- * /config/raw:
+ * /system/config/raw:
  *    get:
  *      description: Gets the system config with variables NOT rendered
  *      tags: [system]
@@ -97,7 +97,7 @@ router.get(
 
 /**
  * @swagger
- * /config:
+ * /system/config:
  *    put:
  *      description: Sets the system config.
  *      tags: [system]

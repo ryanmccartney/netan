@@ -8,7 +8,7 @@ const getLink = require("@services/get-link");
 
 /**
  * @swagger
- * /:
+ * /links:
  *    get:
  *      description: Gets information about active links.
  *      tags: [links]
@@ -30,12 +30,19 @@ router.get(
 
 /**
  * @swagger
- * /:
+ * /links/{interface}:
  *    get:
  *      description: Gets information about individual interface
  *      tags: [links]
  *      produces:
  *        - application/json
+ *      parameters:
+ *       - in: path
+ *         name: interface
+ *         schema:
+ *           type: string
+ *         required: true
+ *         description: The interface name. For example "wlan0"
  *      responses:
  *        '200':
  *          description: Success

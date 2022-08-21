@@ -6,10 +6,10 @@ const hashResponse = require("@utils/hash-response");
 const getLldpneighbors = require("@services/get-lldp-neighbors");
 /**
  * @swagger
- * /:
+ * /neighbors:
  *    get:
  *      description: Gets neighbor information.
- *      tags: [neighbor]
+ *      tags: [neighbors]
  *      produces:
  *        - application/json
  *      responses:

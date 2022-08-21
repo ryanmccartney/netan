@@ -8,7 +8,7 @@ const setInterface = require("@services/set-interface");
 const getCurrentInterface = require("@services/get-interface-current");
 /**
  * @swagger
- * /:
+ * /interfaces:
  *    get:
  *      description: Gets information about interfaces.
  *      tags: [interfaces]
@@ -30,7 +30,7 @@ router.get(
 
 /**
  * @swagger
- * /:
+ * /interfaces:
  *    put:
  *      description: Sets interface in config file.
  *      tags: [interfaces]
@@ -53,7 +53,7 @@ router.put(
 
 /**
  * @swagger
- * /current:
+ * /interfaces/current:
  *    get:
  *      description: Gets information about the current selected interface.
  *      tags: [interfaces]
